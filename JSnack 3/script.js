@@ -12,7 +12,7 @@ let somma = 0;
 // Versione con FOR
 // for (let i = 0; i < 5; i++){
 //   const numero = parseInt(prompt('inserisci un numero'));
-//   somma = somma += numero;
+//   somma = somma + numero;
 // }
 
 
@@ -20,7 +20,7 @@ let somma = 0;
 let c = 0;
 while(c < 5){
   const numero = parseInt(prompt('inserisci un numero'));
-  somma = somma += numero;
+  somma = somma + numero;
   c++
 }
 
