@@ -1,7 +1,16 @@
 // L’utente inserisce due numeri in successione, con due prompt. Il software stampa il maggiore
+let primoNumero;
+let secondoNumero;
 
-const primoNumero = prompt('insirisci il primo numero');
-const secondoNumero = prompt('inserisci il secondo numero');
+//controllo dei numeri fino a quando non sono effettivamente dei numeri
+while(isNaN(primoNumero)){
+  primoNumero = prompt('insirisci il primo numero');
+}
+
+while(isNaN(secondoNumero)){
+  secondoNumero = prompt('insirisci il secondo numero');
+}
+
 const output = document.querySelector('h1');
 
 if (primoNumero > secondoNumero){
@@ -9,5 +18,5 @@ if (primoNumero > secondoNumero){
 } else if(primoNumero < secondoNumero){
   output.innerHTML='Il secondo numero è il più grande';
 } else{
-  output.innerHTML='I due numeri sono uguali4';
+  output.innerHTML='I due numeri sono uguali';
 }
