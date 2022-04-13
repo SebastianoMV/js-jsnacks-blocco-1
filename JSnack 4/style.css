@@ -1,0 +1,19 @@
+.debug{
+  
+  border: 1px solid black;
+}
+.gatsby{
+  height: 100vh;
+  width: 100%;
+  background-color: black;
+  color: white;
+  background-image: url(https://upload.wikimedia.org/wikipedia/it/4/46/Dicapriogatsby.JPG) ;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+
+.smv-hide{
+  display: none;
+}

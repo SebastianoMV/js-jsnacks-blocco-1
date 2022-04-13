@@ -7,17 +7,24 @@
 
 const festone = ['Jay Gatsby','Nick Carraway','Daisy Buchanan','Tom Buchanan','Myrtle Wilson','Jordan Baker'];
 const nomeUtente = prompt('inserisci il tuo nome');
-const output = document.querySelector('h1');
+const outputFestone = document.querySelector('#benvenuto');
+const outputNo = document.querySelector('#non-entri');
+const outputEntrata = document.querySelector('.benvenuto');
 let flag = false;
+let c = 0;
 
 for(let i = 0; i < festone.length; i++){
   if (nomeUtente == festone[i]){
     flag = true;
+    c = i;
   }
 }
 
 if (flag){
-  output.innerHTML = 'Benvenuto alla festa!'
+  outputFestone.classList.remove('smv-hide');
+  outputEntrata.innerHTML = `Benvenuto alla festa ${festone[c]}!`
+  
 }else{
-  output.innerHTML = 'Non sei il benvenuto alla festa!'
+  outputNo.classList.remove('smv-hide');
+  outputNo.innerHTML = 'Non sei il benvenuto alla festa!'
 }
