@@ -4,6 +4,8 @@
  Il software stampa prima la parola più corta, poi la parola più lunga.
 */
 
+//qualunque cosa scriva l'utente anche se non sono parole il programma controllando la lunghezza non può rompersi, quindi credo non metterò dei controlli 
+
 const primaParola = prompt('insirisci la prima parola');
 const secondaParola = prompt('inserisci la seconda parola');
 const output = document.querySelector('h1');

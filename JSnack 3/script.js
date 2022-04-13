@@ -16,10 +16,18 @@ let somma = 0;
 // }
 
 
-
 let c = 0;
+let i = 1;
 while(c < 5){
-  const numero = parseInt(prompt('inserisci un numero'));
+  let numero;
+  
+  while(isNaN(numero)){
+    numero = parseInt(prompt(`inserisci il ${i}° numero`));
+    if (!isNaN(numero)){
+      i++;
+      console.log(i);
+    }
+  }
   somma = somma + numero;
   c++
 }
