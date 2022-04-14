@@ -4,8 +4,11 @@
 */
 
 const output = document.querySelector('body');
+let numero;
+while(isNaN(numero)){
+  numero = prompt('insirisci un numero');
+}
 
-const numero = prompt('inserisci un numero');
 let cubi;
 
 for(let i = 1; i <= numero; i++){

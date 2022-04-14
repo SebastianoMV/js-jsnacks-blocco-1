@@ -24,6 +24,5 @@ const output = document.querySelector('h1');
 for(let i = 0; i < 4;i++){
   numeroChar = parseInt(numero.charAt(i));
   somma += numeroChar;
-  
 }
 output.innerHTML = `la somma è: ${somma}`;
