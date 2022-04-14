@@ -7,8 +7,14 @@
 */
 
 let numero = 'abc';
-while(isNaN(numero), numero.length != 4){
+let flag = false;
+while(flag == false){
   numero = prompt('insirisci un numero di 4 cifre');
+  if( isNaN(numero) == false && numero.length == 4){
+    flag = true;
+  }
+  console.log(numero.length)
+  console.log(flag);
 }
 
 let numeroChar = 0;
