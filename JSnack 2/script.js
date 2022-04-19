@@ -10,10 +10,10 @@ const primaParola = prompt('insirisci la prima parola');
 const secondaParola = prompt('inserisci la seconda parola');
 const output = document.querySelector('h1');
 
-if (primaParola.length > secondaParola.length){
-  output.innerHTML=`${primaParola} è più lunga di ${secondaParola}`;
-} else if(primaParola.length < secondaParola.length){
-  output.innerHTML=`${secondaParola} è più lunga di ${primaParola}`;
+if (primaParola.length < secondaParola.length){
+  output.innerHTML=`${primaParola} è più corta di ${secondaParola}`;
+} else if(primaParola.length > secondaParola.length){
+  output.innerHTML=`${secondaParola} è più corta di ${primaParola}`;
 } else{
   output.innerHTML=`${primaParola} e ${secondaParola} sono lunghe uguali`;
 }
